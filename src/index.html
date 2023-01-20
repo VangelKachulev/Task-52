@@ -6,14 +6,39 @@
     <title>HTML, CSS and SASS Boilerplate</title>
     <meta name="description" content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 </head>
 
-<body>
-    <article class="message">Example</article>
-    <article class="message">Example2</article>
-    <article class="message">Example3</article>
-    <article class="message">Example4</article>
-    <article class="message">Example5</article>
+<body id="body" style="height: 100vh;">
+
+
+
 </body>
+<script>
+    let body = document.getElementById('body');
+    body.addEventListener('click', () => {
+        let article = document.createElement('article')
+        article.className = 'message';
+        article.textContent = ('VANGEL');
+
+        let article2 = document.createElement('article')
+        article2.className = 'message';
+        article2.textContent = ('VANGEL2');
+
+        let article3 = document.createElement('article')
+        article3.className = 'message';
+        article3.textContent = ('VANGEL3');
+
+        let article4 = document.createElement('article')
+        article4.className = 'message';
+        article4.textContent = ('VANGEL4');
+
+        let article5 = document.createElement('article')
+        article5.className = 'message';
+        article5.textContent = ('VANGEL5');
+
+        body.append(article, article2, article3, article4, article5);
+    })
+</script>
 
 </html>
